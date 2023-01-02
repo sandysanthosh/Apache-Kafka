@@ -72,7 +72,7 @@ private String kafkaBrokerAddress;
 @Bean
 public ConsumerFactory<String, String> consumerFactory(){
 
-Map<String, Object> configMap = new HsashMap<>();
+Map<String, Object> configMap = new HashMap<>();
 configMap.put(ConsumerConfig.
 configMap.put(ConsumerConfig.
 configMap.put(ConsumerConfig.
@@ -80,8 +80,21 @@ configMap.put(ConsumerConfig.
 
 }
 
+```
 
 
+##### There are five major APIs in Kafka:
 
 
 ```
+
+Producer API – Permits an application to publish streams of records.
+Consumer API – Permits an application to subscribe to topics and processes streams of records.
+Connector API – Executes the reusable producer and consumer APIs that can link the topics to the existing applications.
+Streams API – This API converts the input streams to output and produces the result.
+Admin API – Used to manage Kafka topics, brokers, and other Kafka objects.
+
+```
+
+
+
