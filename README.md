@@ -4,11 +4,17 @@
 
 -> kafka cluster:
 
-producer - >  source system,source system,source system,source system,
+#### producer:  
 
-Brokers->  Kafka
+source system,source system,source system,source system,
 
-Consumer ->Hadoop, Security Systems, Real-Time Monitoring, Dat warehouse
+#### Brokers:  
+
+Kafka
+
+#### Consumer:
+
+Hadoop, Security Systems, Real-Time Monitoring, Dat warehouse
 
 Kafka Decouples Data Pipelines
 
@@ -28,7 +34,8 @@ Topic 2
 
 -> Bank ACcount withdraw changes
 
--> SMS Application,
+-> SMS Application
+
 -> Email Application
 
 -> KafkaListener:
@@ -44,19 +51,19 @@ Topic 2
 3. Start Zookeper, Kafka, Producer app to test the consumer app
 
 
-spring boot kafka:
+#### spring boot kafka:
 
-Dependency:
+#### Dependency:
 	
 Spring for Apache Kafka
 Spring Web
 
-Application.properties:
+#### Application.properties:
 
 kafka.broker.address=localhost:9092
 server.port=8080
 
-Class:
+#### Class:
 
 Kafka Consumer
 
@@ -88,9 +95,13 @@ configMap.put(ConsumerConfig.
 ```
 
 Producer API – Permits an application to publish streams of records.
+
 Consumer API – Permits an application to subscribe to topics and processes streams of records.
+
 Connector API – Executes the reusable producer and consumer APIs that can link the topics to the existing applications.
+
 Streams API – This API converts the input streams to output and produces the result.
+
 Admin API – Used to manage Kafka topics, brokers, and other Kafka objects.
 
 ```
